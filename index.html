@@ -1,12 +1,144 @@
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Survey Form</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Survey Form</title>
+  <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <p>Hello World!</p>
+  <header>
+
+    <a href="https://urbcellular.co.za/" target="_blank"><img id="logo" src="images/logo.png" alt="URB Selluler Company Logo"></a>
+    <img id="banner" src="images/banner.png" alt="MTN Authorised Dealer Banner">
+  </header>
+
+  <main>
+    <h1 id="title">Customer Experience Survey<h1>
+    <h3 id="description">Kindly take the time to complete the below survey. This is to help us improve our customer
+      experience.</h3>
+    <form id="survey-form">
+      <div class="form-group">
+        <label id="name-label" for="name">Name</label>
+        <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required />
+      </div>
+      <div class="form-group">
+        <label id="number-label" for="number">Age<span class="clue"></span></label>
+        <input type="number" name="age" id="number" min="18" max="100" class="form-control"
+          placeholder="Enter your age" />
+      </div>
+      <div class="form-group">
+        <label id="email-label" for="email">Email</label>
+        <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email address"
+          required />
+      </div>
+
+      <div class="form-group">
+        <p>
+          Which store did you visit?
+        </p>
+        <select id="dropdown" name="storeName" class="form-control" required>
+          <option disabled selected value>Select an option</option>
+          <option value="stellenbosch">Eikestad Mall, Stellenbosh</option>
+          <option value="langebaan">Laguna Mall, Langebaan</option>
+          <option value="piketberg">Shoprite Centre, Piketberg</option>
+          <option value="observatory">St. Peter's Square, Observatory</option>
+          <option value="sunningdale">Table Bay Mall, Sunningdale</option>
+          <option value="vredenburg">Pick n Pay Centre, Vredenburg</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <p>Were you offered any accessories to purchase?</p>
+        <label>
+          <input name="user-recommend" value="yes" type="radio" class="input-radio" checked />Yes</label>
+        <label>
+          <input name="user-recommend" value="no" type="radio" class="input-radio" />No</label>
+
+        <label><input name="user-recommend" value="not-interested" type="radio" class="input-radio" />Not
+          Interested</label>
+      </div>
+
+      <div class="form-group">
+        <p>Were you offered insurance for your new device?</p>
+        <label>
+          <input name="user-recommend" value="yes" type="radio" class="input-radio" checked />Yes</label>
+        <label>
+          <input name="user-recommend" value="no" type="radio" class="input-radio" />No</label>
+
+        <label><input name="user-recommend" value="not-interested" type="radio" class="input-radio" />Not
+          Interested</label>
+      </div>
+
+      <div class="form-group">
+        <p>
+          What would you like to see improved?
+          <span class="clue">(Check all that apply)</span>
+        </p>
+
+        <label><input name="prefer" value="store-cleanliness" type="checkbox" class="input-checkbox" />Store
+          Cleanliness</label>
+        <label>
+          <input name="prefer" value="number-system" type="checkbox" class="input-checkbox" />Number System</label>
+        <label><input name="prefer" value="staff-friendliness" type="checkbox" class="input-checkbox" />Staff
+          Friendliness</label>
+        <label><input name="prefer" value="staff-training" type="checkbox" class="input-checkbox" />Staff
+          Training</label>
+        <label><input name="prefer" value="faster-query-resolution" type="checkbox" class="input-checkbox" />Faster
+          Query Resolution</label>
+        <label><input name="prefer" value="accessory-selection" type="checkbox" class="input-checkbox" />Accessory
+          Selection</label>
+        <label><input name="prefer" value="more-competitive-pricing" type="checkbox" class="input-checkbox" />More
+          Competitive Pricing</label>
+      </div>
+
+      <div class="form-group">
+        <p>How would you rate the overall experience?</p>
+        <label>
+          <input name="user-recommend" value="terrible" type="radio" class="input-radio" checked />1 - Terrible</label>
+        <label>
+          <input name="user-recommend" value="bad" type="radio" class="input-radio" />2 - Bad</label>
+        <label><input name="user-recommend" value="average" type="radio" class="input-radio" />3 - Average</label>
+        <label>
+          <input name="user-recommend" value="good" type="radio" class="input-radio" checked />4 - Good</label>
+        <label>
+          <input name="user-recommend" value="excellent" type="radio" class="input-radio" checked />5 -
+          Excellent</label>
+      </div>
+
+      <div class="form-group">
+        <p>Would you recommend our store to someone?</p>
+        <label>
+          <input name="user-recommend" value="definitely" type="radio" class="input-radio" checked />Definitely</label>
+        <label>
+          <input name="user-recommend" value="maybe" type="radio" class="input-radio" />Maybe</label>
+
+        <label><input name="user-recommend" value="not-at-all" type="radio" class="input-radio" />Not At All</label>
+      </div>
+
+      <div class="form-group">
+        <p>Do you have any other comments or suggestions?</p>
+        <textarea id="comments" class="input-textarea" name="comment"
+          placeholder="Enter your comment here..."></textarea>
+      </div>
+
+      <div class="form-group">
+        <button type="submit" id="submit" class="submit-button">
+          Submit
+        </button>
+        <h3>Thank you for completing the survey. We value your time and your business.</h3>
+      </div>
+    </form>
+  </main>
+
+  <footer>
+    <p>© 2019 MTN URB Cellular. All Rights Reserved.</p>
+    <a href="#top"><img id="gotopbtn" src="images/page-up.png" alt="Page Up Arrow"></a>
+  </footer>
 </body>
+
 </html>
