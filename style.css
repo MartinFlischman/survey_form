@@ -92,6 +92,18 @@ h3 {
 }
 
 .form-group {
-  padding: 10px 0;
+  padding: 15px 500px;
   display: flex; 
+}
+
+#text {
+  padding: 8px 10px;
+}
+
+.select {
+  padding: 20px;
+}
+
+.headings {
+  font-weight: bold;
 }
