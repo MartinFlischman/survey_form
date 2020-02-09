@@ -28,7 +28,7 @@
         <div class="form-group">
           <label id="number-label" for="number">Age<span class="clue"></span></label>
           <input type="number" name="txtAge" id="number" min="18" max="100" class="form-control"
-            placeholder="Enter your age" />
+            placeholder="Enter your age" required/>
         </div>
         <div class="form-group">
           <label id="email-label" for="txtEmail">Email</label>
@@ -49,26 +49,33 @@
           </select>
         </div>
 
+        <br>
+
         <div class="form-group">
-        <label>Were you offered any accessories to purchase?</label>
+        <label>Were you offered any accessories to purchase?</label> <br>
           <input name="accessories" value="yes" type="radio" class="input-radio" checked />Yes
           <input name="accessories" value="no" type="radio" class="input-radio" />No
           <input name="accessories" value="not-interested" type="radio" class="input-radio" />Not
           Interested
       </div>
 
+      <br>
+
       <div class="form-group">
-        <label class="headings">Were you offered insurance for your new device?</label>
+        <label class="headings">Were you offered insurance for your new device?</label> <br>
+        <input name="insurance" value="yes" type="radio" class="input-radio" />Yes
         <input name="insurance" value="no" type="radio" class="input-radio" />No
         <input name="insurance" value="not-interested" type="radio" class="input-radio" />Not
           Interested</label>
       </div>
 
+      <br>
+
       <div class="form-group">
         <label>
           What would you like to see improved?
           <span class="clue">(Check all that apply)</span>
-        </label>
+        </label> <br>
         <input name="prefer" value="store-cleanliness" type="checkbox" class="input-checkbox" />Store
           Cleanliness
         <input name="prefer" value="number-system" type="checkbox" class="input-checkbox" />Number System
@@ -84,8 +91,10 @@
           Competitive Pricing
       </div>
 
+      <br>
+
       <div class="form-group">
-        <label>How would you rate the overall experience?</label>
+        <label>How would you rate the overall experience?</label> <br>
           <input name="experience" value="terrible" type="radio" class="input-radio" checked />1 - Terrible
           <input name="experience" value="bad" type="radio" class="input-radio" />2 - Bad</label>
         <label><input name="experience" value="average" type="radio" class="input-radio" />3 - Average</label>
@@ -96,18 +105,19 @@
           Excellent</label>
       </div>
 
-      <div class="select">
-        <p class="headings">Would you recommend our store to someone?</p>
-        <label>
-          <input name="recommend" value="definitely" type="radio" class="input-radio" checked />Definitely</label>
-        <label>
-          <input name="recommend" value="maybe" type="radio" class="input-radio" />Maybe</label>
+      <br>
 
-        <label><input name="recommend" value="not-at-all" type="radio" class="input-radio" />Not At All</label>
+      <div class="select">
+        <label class="headings">Would you recommend our store to someone?</label> <br>
+          <input name="recommend" value="definitely" type="radio" class="input-radio" checked />Definitely
+          <input name="recommend" value="maybe" type="radio" class="input-radio" />Maybe
+          <input name="recommend" value="not-at-all" type="radio" class="input-radio" />Not At All
       </div>
 
+      <br>
+
       <div class="comments">
-        <p  class="headings">Do you have any other comments or suggestions?</p>
+        <label class="headings">Do you have any other comments or suggestions?</label> <br> <br>
         <textarea id="comments" class="input-textarea" name="comment"
           placeholder="Enter your comment here..."></textarea>
       </div>
